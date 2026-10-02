@@ -47,7 +47,7 @@ Only 11 of these have matched RNA.
 
 ### `V2_spliceAI_VAF_quantile_fraction.txt` — 180,162 rows, 18 columns
 
-Yilin Xie's V2 somatic SpliceAI callset. One row per (variant, donor-tissue).
+V2 somatic SpliceAI callset. One row per (variant, donor-tissue).
 
 | Column | Meaning |
 |---|---|
