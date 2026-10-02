@@ -1,0 +1,38 @@
+# Python dependencies
+#   pip install -r requirements.txt
+#
+# pysam and pyranges need a C toolchain; on macOS install samtools first
+# (e.g. `brew install samtools`) or use conda.
+
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+seaborn>=0.12
+pysam>=0.22
+pyranges>=0.0.120
+
+# Optional — deck assembly
+python-pptx>=0.6.21
+
+# ─────────────────────────────────────────────────────────────────────────
+# NOT pip-installable. Install separately.
+#
+# R >= 4.3
+#   install.packages(c("data.table","dplyr","ggplot2","patchwork",
+#                      "matrixStats","broom","stringr","scales",
+#                      "lme4","lmerTest"))
+#   BiocManager::install("FRASER")
+#   devtools::install_github("davidaknowles/leafcutter/leafcutter")
+#     ^ requires Stan/rstan; this fails on macOS. Use Docker or a Linux
+#       cluster. See docs/methods.md.
+#
+# Command-line
+#   samtools >= 1.17
+#   regtools >= 1.0
+#   gsutil   (Google Cloud SDK)
+#
+# Broad-internal, optional
+#   pyqtl    — only for phase3/05_plot_pileup_pyqtl.py
+#              phase3/06_plot_pileup_standalone.py is the dependency-free
+#              equivalent and produces the same figure.
